@@ -1,0 +1,75 @@
+@charset "Utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primarycolor: #F0F5F9;
+    --secondarycolor: #4F4F4F;
+    --tertiarycolor: #B0B0B0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    line-height: 1.6em;
+    font-size: 1.3em;
+    background-color: var(--primarycolor);
+}
+
+.container {
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 15px;
+
+}
+
+h2 {
+    font-size: 1.5em;
+    color: var(--secondarycolor);
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: var(--tertiarycolor);
+    color: var(--primarycolor);
+    margin-top: 15px;
+}
+
+form button,
+form input {
+    border: 1px solid var(--secondarycolor);
+    height: 35px;
+    padding: 5px 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--secondarycolor);
+}
+
+.p-result-approved {
+    font-size: 20px;
+    color: #004600;
+}
+
+.p-result-disapproved {
+    font-size: 20px;
+    color: #630000;
+}
+
+.p-result-error {
+    font-size: 20px;
+}
